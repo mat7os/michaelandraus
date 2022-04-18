@@ -1,0 +1,168 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.orderDocumentsButton {
+  color: #7b8ca8;
+  background-color: transparent;
+  padding: calc(0.75rem - 1px) calc(2.75rem - 1px);
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  border: 2px solid rgba(123, 140, 168, 0.35);
+  cursor: pointer;
+}
+
+.orderDocumentsButton:hover {
+  background: #7b8ca8;
+  color: #ffffff;
+}
+
+.orderDocumentsRefreshButton {
+  color: #7b8ca8;
+  background-color: transparent;
+  padding: 0.45rem 0.45rem 0.25rem 0.45rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  border: 2px solid rgba(123, 140, 168, 0.35);
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+  height: 100%;
+}
+
+.orderDocumentsRefreshButton:hover {
+  background: #7b8ca8;
+  color: #ffffff;
+}
+
+.orderDocumentsFlexContainer {
+  display: flex;
+  width: 100%;
+  position: absolute;
+}
+
+.orderDocumentsList {
+  list-style-type: none;
+  min-width: 220px;
+  max-width: 100%;
+  overflow-y: auto;
+  margin-top: 0;
+  padding: 0;
+}
+
+.orderDocumentsListItem:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.orderDocumentsListItem {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 0;
+  padding: 5px;
+  animation: fadeIn ease 1s;
+}
+
+.orderDocumentsOuterWrapper {
+  max-width: 60rem;
+  width: 100%;
+  margin: 1rem auto;
+  background: white;
+  border: 1px solid #e4e8ed;
+  box-shadow: 8px 8px 2px #e4e8ed;
+  border-radius: 4px;
+}
+
+.orderDocumentsInnerWrapper {
+  padding: 0.5rem 3rem 3rem 3rem;
+  margin-top: 2rem;
+}
+
+.orderDocumentsMarginTop {
+  margin-top: 3rem;
+}
+
+.orderDocumentsNoTopMargin {
+  margin-top: 0;
+}
+
+.orderDocumentsHr {
+  border-top: 1px solid #ddd;
+}
+
+.orderDocumentsRule {
+  border-top: 1px solid #ddd;
+  margin-top: 1.25rem;
+}
+
+.orderDocumentsFlexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderDocumentsFlexEnd {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.orderDocumentsSelectWrapper {
+  margin-bottom: 1rem;
+  width: 15rem;
+  text-align: left;
+  transition: 250ms ease-out;
+  padding: 1rem 0.75rem 1rem 1rem;
+  background: #f3f3f3;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  animation: fadeIn ease 0.5s;
+}
+
+.orderDocumentsFieldsSelect {
+  width: 100%;
+}
+
+.orderDocumentsTooltip {
+  margin-top: -0.25rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.orderDocumentsTooltipText {
+  margin: 0.75rem;
+  max-width: 16rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgb(153, 153, 153);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 42rem) {
+  .orderDocumentsFlexSpaceBetween {
+    flex-direction: column-reverse;
+  }
+
+  .orderDocumentsSelectWrapper {
+    width: 100%;
+    max-width: 12.5rem;
+  }
+}
+
+.orderDocumentsSubheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderDocumentsButtonWrapper {
+  display: flex;
+  justify-content: center;
+}
