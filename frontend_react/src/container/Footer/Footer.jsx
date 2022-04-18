@@ -23,10 +23,10 @@ const Footer = () => {
 
     e.preventDefault();
     send(
-      'service_udrawn8',
-      'template_cdm1g3v',
+      'SERVICE',
+      'TEMPLATE',
       toSend,
-      'EI62OtMLoNUoHwCMg'
+      'ID'
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
